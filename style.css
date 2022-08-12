@@ -1,0 +1,208 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  background-color: #202124;
+}
+
+nav ul div {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav ul li {
+  padding: 10px 10px;
+  margin: 5px 5px;
+  font-size: 0.8rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.nav-links {
+  color: white;
+  font-family: arial, sans-serif;
+}
+
+nav li {
+  display: flex;
+}
+
+#app-menu {
+  height: 1.5rem;
+  width: 1.5rem;
+  cursor: pointer;
+}
+
+.menu-icon {
+  margin: 15px 15px;
+}
+
+#app-menu:hover {
+  background-color: #5f6368;
+  border-radius: 50px;
+}
+
+#user {
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+#google-logo {
+  width: 80%;
+  height: 150px;
+  margin: 5px auto;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 24px;
+  border: 1px solid #5f6368;
+  width: 46%;
+  height: 2.75rem;
+  margin: 0.7rem auto;
+}
+
+header input {
+  position: relative;
+  border: none;
+  background: transparent;
+  width: 80%;
+  outline: none;
+}
+
+#search-img {
+  position: relative;
+  top: 0;
+  right: 3.7%;
+  filter: invert(45%);
+  width: 1rem;
+  height: 1rem;
+}
+
+#mic {
+  position: relative;
+  top: 0;
+  left: 2%;
+  width: 1.5rem;
+  height: 1.5rem;
+  cursor: pointer;
+}
+
+.search-bar:hover {
+  background: #333333;
+  box-shadow: 2px 1px 5px rgb(17, 17, 17);
+  border: none;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn {
+  margin: 15px 10px;
+  padding: 10px 30px;
+  font-size: 0.9rem;
+  background-color: #303134;
+  color: white;
+  border: none;
+  font-family: arial, sans-serif;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  border: 1px solid #5f6368;
+  box-sizing: border-box;
+}
+
+.language-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 2%;
+}
+
+.text {
+  margin: 15px 15px;
+  color: white;
+  font-size: 0.8rem;
+}
+
+.list a {
+  font-size: 0.8rem;
+  margin: 0 8px;
+  color: #8ab4f8;
+}
+
+.India {
+  display: block;
+  width: 100vw;
+  height: 2.5rem;
+  position: fixed;
+  bottom: 6.3%;
+  background: #171717;
+  color: #bdc1c6;
+  font-family: arial, sans-serif;
+  font-size: 0.9rem;
+  border-bottom: 1px solid #5f6368;
+}
+
+footer p {
+  align-items: center;
+  margin: 10px 30px;
+  font-family: arial, sans-serif;
+}
+
+footer ul {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: fixed;
+  bottom: 0;
+  padding: 3px 10px;
+  background-color: #171717;
+  width: 100vw;
+  height: 2.5rem;
+  list-style: none;
+  font-family: arial, sans-serif;
+  font-size: 0.9rem;
+}
+
+footer ul li a {
+  padding: 3px 10px;
+  color: #bdc1c6;
+}
+
+.list1 {
+  display: flex;
+  align-items: centre;
+  justify-content: flex-start;
+  margin-left: 1vw;
+}
+
+.list2 {
+  display: flex;
+  align-items: centre;
+  justify-content: flex-end;
+  margin-left: 55vw;
+}
