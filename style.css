@@ -41,16 +41,23 @@ nav li {
 #app-menu {
   height: 1.5rem;
   width: 1.5rem;
+  margin: auto;
   cursor: pointer;
 }
 
+/* Changed the width and height of the div outside image */
 .menu-icon {
   margin: 15px 15px;
+  width: 2.3rem;
+  height: 2.3rem;
 }
 
-#app-menu:hover {
-  background-color: #5f6368;
+/* Hover on div looks better */
+.menu-icon:hover {
+  background-color: #494f58;
+  opacity: .6 ;
   border-radius: 50px;
+  cursor: pointer;
 }
 
 #user {
