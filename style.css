@@ -1,222 +1,278 @@
-/* */
-   
+  /* 
+  1. Fixed the hover effect of app-menu
+  */
+    
 
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: "Open Sans", sans-serif;
-}
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+  }
 
-body {
-  background-color: #202124;
-}
+  body {
+    background-color: #202124;
+  }
 
-nav ul div {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
+  nav ul div {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
 
-nav ul li {
-  padding: 10px 0px;
-  margin: 5px 5px;
-  font-size: 0.8rem;
-}
+  nav ul li {
+    padding: 10px 0px;
+    margin: 5px 5px;
+    font-size: 0.8rem;
+  }
 
-a {
-  text-decoration: none;
-}
+  a {
+    text-decoration: none;
+  }
 
-a:hover {
-  text-decoration: underline;
-}
+  a:hover {
+    text-decoration: underline;
+  }
 
-.nav-links {
-  color: white;
-  font-family: arial, sans-serif;
-}
+  .nav-links {
+    color: white;
+    font-family: arial, sans-serif;
+  }
 
-nav li {
-  display: flex;
-}
-
-#app-menu {
-  height: 1.5rem;
-  width: 1.5rem;
-  margin: auto;
-  cursor: pointer;
-}
-
-/* Added width and height of the div outside image and removed the margin */
-.menu-icon {
-  width: 2.3rem;
-  height: 2.3rem;
-  z-index: 0;
-}
-
-/* Hover on div looks better */
-.menu-icon:hover {
-  background-color: #494f58;
-  opacity: .6 ;
-  border-radius: 50px;
-  cursor: pointer;
-}
-
-.btn {
-  margin: 15px 10px;
-  padding: 10px 30px;
-  font-size: 0.9rem;
-  background-color: #303134;
-  color: white;
-  /* Added border here to avoid the addition of border while hover */
-  border: 1px solid rgba(0, 0, 0, 0);
-  font-family: arial, sans-serif;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.btn:hover {
-  border: 1px solid #5f6368;
-}
-
-#user {
-  width: 1.8rem;
-  height: 1.8rem;
-  margin-right: 10px;
-  border-radius: 50px;
-  cursor: pointer;
-}
-
-#google-logo {
-  width: 80%;
-  height: 150px;
-  margin: 5px auto;
-  margin-bottom: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.search-bar {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 24px;
-  border: 1px solid #5f6368;
-  width: 46vw;
-  height: 2.75rem;
-  margin: 0.7rem auto;
-}
-
-header input {
-  position: relative;
-  border: none;
-  background: transparent;
-  width: 80%;
-  outline: none;
-}
-
-#search-img {
-  position: relative;
-  top: 0;
-  right: 3.7%;
-  filter: invert(45%);
-  width: 1rem;
-  height: 1rem;
-}
-
-#mic {
-  position: relative;
-  top: 0;
-  left: 2%;
-  width: 1.5rem;
-  height: 1.5rem;
-  cursor: pointer;
-}
-
-.search-bar:hover {
-  background: #333333;
-  box-shadow: 2px 1px 5px rgb(17, 17, 17);
-  border: 1px solid rgba(0, 0, 0, 0);
-}
-
-.buttons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+  nav li {
+    display: flex;
+  }
 
 
-.language-list {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  top: 2%;
-}
+  #user {
+    width: 1.8rem;
+    height: 1.8rem;
+    margin-right: 10px;
+    border-radius: 50px;
+    cursor: pointer;
+  }
 
-.text {
-  margin: 15px 15px;
-  color: white;
-  font-size: 0.8rem;
-}
+  #google-logo {
+    width: 80%;
+    height: 150px;
+    margin: 5px auto;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
-.list a {
-  font-size: 0.8rem;
-  margin: 0 8px;
-  color: #8ab4f8;
-}
+  .search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 24px;
+    border: 1px solid #5f6368;
+    max-width: 50%;
+    height: 2.75rem;
+    margin: 0.7rem auto;
+  }
 
-.India {
-  display: block;
-  width: 100vw;
-  height: 2.5rem;
-  position: fixed;
-  bottom: 6.3%;
-  background: #171717;
-  color: #bdc1c6;
-  font-family: arial, sans-serif;
-  font-size: 0.9rem;
-  border-bottom: 2px solid #5f6368;
-}
+  #search-img {
+    filter: invert(45%);
+    width: 1rem;
+    height: 1rem;
+  }
 
-footer p {
-  align-items: center;
-  margin: 10px 30px;
-  font-family: arial, sans-serif;
-}
+  #mic {
+    width: 1.3rem;
+    height: 1.3rem;
+    cursor: pointer;
+  }
 
-footer ul {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  position: fixed;
-  bottom: 0;
-  padding: 3px 10px;
-  background-color: #171717;
-  width: 100vw;
-  height: 2.5rem;
-  list-style: none;
-  font-family: arial, sans-serif;
-  font-size: 0.9rem;
-}
+  .search-bar:hover {
+    background: #333333;
+    box-shadow: 2px 1px 5px rgb(17, 17, 17);
+    border: 1px solid rgba(0, 0, 0, 0);
+  }
 
-footer ul li a {
-  padding: 3px 10px;
-  color: #bdc1c6;
-}
+  .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
-.list1 {
-  display: flex;
-  align-items: centre;
-  justify-content: flex-start;
-  margin-left: 1vw;
-}
+  .language-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex-wrap: wrap;
+    top: 2%;
+  }
 
-.list2 {
-  display: flex;
-  align-items: centre;
-  justify-content: flex-end;
-  margin-left: 55vw;
-}
+  .list{
+    width: 485px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .list a {
+    font-size: 0.8rem;
+    margin: 0 8px;
+    color: #8ab4f8;
+  }
+
+  .India {
+    display: block;
+    width: 100vw;
+    height: 2.5rem;
+    position: fixed;
+    bottom: 6.3%;
+    background: #171717;
+    color: #bdc1c6;
+    font-family: arial, sans-serif;
+    font-size: 0.9rem;
+    border-bottom: 2px solid #5f6368;
+  }
+
+  footer p {
+    align-items: center;
+    margin: 10px 30px;
+    font-family: arial, sans-serif;
+  }
+
+  footer ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: fixed;
+    bottom: 0;
+    padding: 3px 10px;
+    background-color: #171717;
+    width: 100vw;
+    height: 2.5rem;
+    list-style: none;
+    font-family: arial, sans-serif;
+    font-size: 0.9rem;
+  }
+
+  footer ul li a {
+    padding: 3px 10px;
+    color: #bdc1c6;
+  }
+
+  .list1 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 1vw;
+  }
+
+  .list2 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-left: 55vw;
+  }
+
+  /* -------------------------------------------------------------------------------------- */
+  /* All the edited files are below */
+
+  .text {
+    margin: 15px 15px;
+    color: #bdc1c6;
+    font-size: 0.8rem;
+  }
+
+  #app-menu {
+    filter: invert(85%);
+    height: 1.5rem;
+    width: 1.5rem;
+    cursor: pointer;
+  }
+
+  /* Added width and height of the div outside image and removed the margin */
+  .menu-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.3rem;
+    height: 2.3rem;
+  }
+
+  /* Hover on div looks better */
+  .menu-icon:hover {
+    background-color: #494f58;
+    opacity: .6 ;
+    border-radius: 50px;
+    cursor: pointer;
+  }
+
+  .btn {
+    margin: 15px 10px;
+    padding: 10px 30px;
+    font-size: 0.9rem;
+    background-color: #303134;
+    color: white;
+    /* Added border here to avoid the addition of border while hover */
+    border: 1px solid rgba(0, 0, 0, 0);
+    font-family: arial, sans-serif;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  /* 
+  .btns{
+    display: flex;
+    max-width: 40%;
+    text-align: center;
+  } */
+
+  .btn:hover {
+    border: 1px solid #5f6368;
+  }
+
+  header input {
+    background-color: transparent;
+    border: none;
+    color: white;
+    outline: none;
+    height: 34px;
+    width: 80%;
+    font-size: 16px;
+  }
+
+  /* .image-google{
+    width: 40vw;
+    position: relative;
+    left: 30vw;
+  } */
+
+  .search-image , .mic-image{
+    width: 10%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @media (max-width: 380px) {
+    .btn{
+      font-size: .7rem;
+      padding: 10px;
+      width: 100%;
+    }
+
+    input{
+      width: 70%;
+    }
+
+  .search-image , .mic-image{
+    width: 15%;
+  }
+  }
+
+  @media (max-width: 900px){
+    header input {
+      width: 75%;
+      color: white;
+    }
+  }
