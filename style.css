@@ -1,3 +1,6 @@
+/* */
+   
+
 * {
   padding: 0;
   margin: 0;
@@ -16,7 +19,7 @@ nav ul div {
 }
 
 nav ul li {
-  padding: 10px 10px;
+  padding: 10px 0px;
   margin: 5px 5px;
   font-size: 0.8rem;
 }
@@ -45,11 +48,11 @@ nav li {
   cursor: pointer;
 }
 
-/* Changed the width and height of the div outside image */
+/* Added width and height of the div outside image and removed the margin */
 .menu-icon {
-  margin: 15px 15px;
   width: 2.3rem;
   height: 2.3rem;
+  z-index: 0;
 }
 
 /* Hover on div looks better */
@@ -60,7 +63,27 @@ nav li {
   cursor: pointer;
 }
 
+.btn {
+  margin: 15px 10px;
+  padding: 10px 30px;
+  font-size: 0.9rem;
+  background-color: #303134;
+  color: white;
+  /* Added border here to avoid the addition of border while hover */
+  border: 1px solid rgba(0, 0, 0, 0);
+  font-family: arial, sans-serif;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  border: 1px solid #5f6368;
+}
+
 #user {
+  width: 1.8rem;
+  height: 1.8rem;
+  margin-right: 10px;
   border-radius: 50px;
   cursor: pointer;
 }
@@ -81,7 +104,7 @@ nav li {
   justify-content: center;
   border-radius: 24px;
   border: 1px solid #5f6368;
-  width: 46%;
+  width: 46vw;
   height: 2.75rem;
   margin: 0.7rem auto;
 }
@@ -115,7 +138,7 @@ header input {
 .search-bar:hover {
   background: #333333;
   box-shadow: 2px 1px 5px rgb(17, 17, 17);
-  border: none;
+  border: 1px solid rgba(0, 0, 0, 0);
 }
 
 .buttons {
@@ -124,22 +147,6 @@ header input {
   justify-content: center;
 }
 
-.btn {
-  margin: 15px 10px;
-  padding: 10px 30px;
-  font-size: 0.9rem;
-  background-color: #303134;
-  color: white;
-  border: none;
-  font-family: arial, sans-serif;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.btn:hover {
-  border: 1px solid #5f6368;
-  box-sizing: border-box;
-}
 
 .language-list {
   display: flex;
@@ -171,7 +178,7 @@ header input {
   color: #bdc1c6;
   font-family: arial, sans-serif;
   font-size: 0.9rem;
-  border-bottom: 1px solid #5f6368;
+  border-bottom: 2px solid #5f6368;
 }
 
 footer p {
