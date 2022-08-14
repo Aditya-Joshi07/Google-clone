@@ -96,7 +96,6 @@ nav li {
   display: flex;
   align-items: center;
   justify-content: center;
-  cursor:pointer;
 }
 
 .search-bar {
@@ -150,9 +149,6 @@ header input {
   justify-content: center;
 }
 
-.buttons .btn{
-  border-radius: 25px;
-}
 
 .language-list {
   display: flex;
@@ -165,8 +161,7 @@ header input {
 .text {
   margin: 15px 15px;
   color: white;
-  font-size: 0.7rem;
-  font-weight: bolder;
+  font-size: 0.8rem;
 }
 
 .list a {
@@ -201,7 +196,7 @@ footer ul {
   position: fixed;
   bottom: 0;
   padding: 3px 10px;
-  background-color: transparent;
+  background-color: #171717;
   width: 100vw;
   height: 2.5rem;
   list-style: none;
